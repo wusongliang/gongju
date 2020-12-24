@@ -54,6 +54,7 @@ export default {
     getFiles(e) {
       this.files = e.srcElement.files;
       this.info = "";
+      this.color = "red";
     },
 
     compressImages() {
@@ -63,19 +64,23 @@ export default {
         return;
       }
 
-      this.outPath = path.dirname(this.files[0].path) + "/" + this.outFileName;
+      this.outPath = path.dirname(this.files[0].path) + "\\" + this.outFileName;
 
       try {
+        if (this.color === "green") {
+          this.info = "已经压缩成功，请重新选择图片！";
+          return;
+        }
+
         fs.mkdir(this.outPath, async () => {
-          await this.files.forEach(file => {
+          for (let file of this.files) {
             const fileName = path.basename(file.path);
             // const imageType = path.extname(file.path);
             // const quality = imageType === ".png" ? 50 : 70;
-    
-            images(file.path).save(this.outPath + "/" + fileName, {
+            await images(file.path).save(this.outPath + "\\" + fileName, {
               quality: this.quality       
             });
-          });
+          }
   
           this.color = "green";
           this.info = "压缩成功, 图片保存在min-images文件";
