@@ -2,6 +2,7 @@
   "name": "min-images",
   "version": "0.1.0",
   "private": true,
+  "productName": "实用-工具",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
