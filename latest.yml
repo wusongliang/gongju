@@ -1,8 +1,8 @@
-version: 0.1.0
+version: 0.1.1-0
 files:
-  - url: min-images-setup-0.1.0.exe
-    sha512: 3H1kQZcu8PThWZa54A5bcqC3WXSPnZNN767jCdT2y3FEemVFhjwV6aKSlde43XnGr4vjhPkHHLT3ugKk6sLSWA==
-    size: 50793666
-path: min-images-setup-0.1.0.exe
-sha512: 3H1kQZcu8PThWZa54A5bcqC3WXSPnZNN767jCdT2y3FEemVFhjwV6aKSlde43XnGr4vjhPkHHLT3ugKk6sLSWA==
-releaseDate: '2020-12-24T11:00:13.570Z'
+  - url: min-images-setup-0.1.1-0.exe
+    sha512: sh59123YZ+2Nq1vtMvhCFIIXpobnau4jAyJ2cixgw1AITk7mmsloLQVMvCu6eifBcuRfOQ6hOi9Uk2IVKd4VdQ==
+    size: 50793968
+path: min-images-setup-0.1.1-0.exe
+sha512: sh59123YZ+2Nq1vtMvhCFIIXpobnau4jAyJ2cixgw1AITk7mmsloLQVMvCu6eifBcuRfOQ6hOi9Uk2IVKd4VdQ==
+releaseDate: '2020-12-25T06:18:20.886Z'
